@@ -1,12 +1,13 @@
 <?php
 header('Content-Type: application/json');
 
+$today = date('m/d/Y');
 $data = array (
   'Language' => 'ENG',
   'Currency' => 'USD',
   'destination' => 'MCO',
-  'DateFrom' => '03/13/2019',
-  'DateTO' => '03/13/2019',
+  'DateFrom' => $today,
+  'DateTO' => $today,
   'Occupancy' => 
   array (
     'AdultCount' => '1',
